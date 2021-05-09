@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive PortFolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="ext.js" language="javascript"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+     integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+     crossorigin="anonymous">
+     <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+<link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body> 
+    <!-- Creating Menu Tabs & Logo at Top Using HTML -->
+    <header>
+       <a href="#" class="logo">PRIYANKA VILTORIA</a>
+       <div class="toggle" onclick="toggleMenu();"></div>
+       <ul class="menu">
+           <li><a href="#home" onclick="toggleMenu();">Home</a></li>
+           <li><a href="#about" onclick="toggleMenu();">About</a></li>
+           <li><a href="#testimonial" onclick="toggleMenu();">Education</a></li>
+           <li><a href="#services" onclick="toggleMenu();">Skills</a></li>
+           <li><a href="#work" onclick="toggleMenu();">Work</a></li>
+           <li><a href="#contact" onclick="toggleMenu();">Contact</a></li>
+       </ul>
+    </header>
+    <section class="banner" id="home">
+        <div class="textox">
+            <h2 style="color: #F5F5F5";>Hello, I am<br> <span>Priyanka Viltoria</span></h2>
+            <h3>And I'm a <span class="typing"></span></h3>
+            <a href="#about" class="btn">About Me</a>
+        </div>
+    </section>
+    <!-- Creating About Me Layout in HTML-->
+    <section class="about" id="about">
+        <div class="heading">
+            <p>Get to know me</p>
+            <h2>About me</h2>
+        </div>
+        <div class="content">
+            <div class="w50">
+                <img src=mypic.jpg alt="" class="proPic">
+            </div>
+            <div class="contentBox w50">
+                <h3></h3>
+                <h2>I'm <b>Priyanka Viltoria</b>, a Full Stack Java Developer and Web Designer.</h2>
+             <p>I am  hard-working graduate specialized in COMPUTER SCIENCE.
+          I have knowledge of JAVA, C++, MYSQL, HTML5, CSS3, JAVASCRIPT, DBMS, JSP and HIBERNATE 
+          also done some projects named as Online Tiffin Management System, Online Voting System and My Online Portfolio etc. 
+          I'm good in problem solving, teamwork and time management.<br>
+          Recently I have completed my CSR training in FULL STACK JAVA DEVLOPEMENT initiated by Altran part of Capgemini Governed by 
+          NASSCOM foundation under CENTUM FOUNDATION. 
+          Along with my training, I have completed various certification in core java.<br>
+          During this training, I have learn various skill like java, jsp, HTML, CSS ,etc and 
+          done a group project named Annapurna which is basically a home cooked food delivery service at the doorsteps 
+          in which multiple vendors are the part of it. I was the team leader for this project along with 4 people.
+	</p>
+	   <div class="heading bottom">
+                    <a href="Priyanka's Resume.pdf" class="btn round">Download CV</a>
+                    <div class="bt">
+                        <b>Name:</b> Priyanka Viltoria<br>
+                        <b>Age:</b> 23
+                    </div>
+                    <div class="bt">
+                        <b>Email:</b> priyankaviltoria@gmail.com<br>
+                        <b>Location:</b> India
+                    </div>
+                </div>
+            </div>        
+        </div>
+    </section>
+     <!-- Creating Testimonial Layout in HTML-->
+    <section class="testimonial" id="testimonial">
+        <div class="heading white">
+            <h2>Education</h2>
+            <p></p>
+        </div>
+        <div class="content">
+        	  <div class="testimonialBox">
+        	   <p>Industrial Training</p>
+              <p>2020</p>
+             <p>She Arise<br>
+              CSR Initiative of Altran, the part of Capgemini 
+              Governed by NASSCOM Foundation Under Centum Foundation<br>
+           		</p>
+              <h3>Full Stack Java Development</h3>
+          </div>
+            <div class="testimonialBox">
+           <p>Master's in Computer Science</p>
+              <p>2018 - 2020</p>
+              <p>University: Chaudhary Charan Singh University, Meerut<br>
+              College: Meerut College, Meerut
+              </p>
+              <h3>Marks: 86.9%</h3>
+           </div>
+            <div class="testimonialBox">
+          	 <p>Bachelor's in Computer Science</p>
+              <p>2018 - 2020</p>
+              <p>University: Chaudhary Charan Singh University, Meerut<br>
+              College: Meerut College, Meerut 
+              </p>
+              <h3>Marks: 76.67%</h3>
+          
+            </div>
+        </div>
+    </section>
+    
+    <!-- Creating Services Layout in HTML -->
+    <section class="services" id="services">
+        <div class="heading white">
+            <h2>Skills</h2>
+            <p>Professional Skills</p>
+        </div>
+        <div class="content">
+          <div class="servicesBox">
+             	<i class="fa fa-fire"></i>
+					<h3>JAVA</h3>
+			</div>
+            <div class="servicesBox">
+             	<i class="fa fa-html5"></i>				
+					<h3>HTML5</h3>
+			</div>
+			
+            <div class="servicesBox">
+            <i class="fa fa-css3"></i>				
+					<h3>CSS3<h3>
+			</div>
+            <div class="servicesBox">
+             <i class="fa fa-database"></i>			
+					<h3>MYSQL<h3>
+				</div>			
+			
+			<div class="servicesBox">
+        <i class='bx bxl-c-plus-plus' ></i>	
+					<h3>C++<h3>
+						</div>			
+			
+			<div class="servicesBox">
+          	<i class='bx bxl-javascript' ></i>	
+			<h3>JAVASCRIPT<h3>
+			</div>			
+			
+			<div class="servicesBox">
+             			<i class="fa fa-database"></i>			
+					<h3>DBMS<h3>
+				</div>			
+				
+        </div>
+    </section>
+    <!-- Creating Work Layout in HTML-->
+    <section class="work" id="work">
+        <div class="heading">
+            <h2>My Latest Work</h2>
+<p>Showcasing some of my <b>Project (Annapurna) Views</b> and some of my <b>Certificates</b></p>
+	        </div>
+        <div class="content">
+            <div class="workBox">
+              <a href="" target="_blank">
+				<img src=homepagee.png alt=" ">
+				<p>Web Design Layouts in Home Page of "Annapurna"</p>
+			</a>
+		</div>
+            <div class="workBox">
+           		<a href="" target="_blank">
+				<img src=Admin_login.png alt=" ">
+				<p>The "Admin Login" Form - With Email, Password & Login Button</p>
+			</a>
+	 </div>
+            <div class="workBox">
+              <a href="" target="_blank">
+				<img src=vendorHomepage.png alt="">
+				<p>The Home Page of Vendor</p>
+				</a>
+			</div>
+            <div class="workBox">
+              <a href="" target="_blank">
+				<img src=pro_login.png alt="">
+				<p>The "Vendor Login" Form - With Email, Password & Login Button</p>
+		</a>
+		</div>
+            <div class="workBox">
+            	<a href="" target="_blank">
+				<img src=Vendor_reg.png alt="">
+				<p>Beautiful Design of "Vendor Registration Form" in Annapurna</p>
+		</a>
+		</div>
+            <div class="workBox">
+           	<a href="" target="_blank">
+				<img src=cust_home.png alt="">
+				<p>The Home Page of Customer</p>
+			</a>
+			
+		 </div>
+		 
+		   <div class="workBox">
+          
+		 		<a href="" target="_blank">
+				<img src=cust_login.png alt="">
+				<p>The "Customer Login" Form - With Username, Password & Login Button</p>
+		</a>
+		</div>
+		
+		 <div class="workBox">
+          
+		 		<a href="" target="_blank">
+				<img src=cust_reg.png alt="">
+				<p>Beautiful Design of "Customer Registration Form" in Annapurna</p>
+			</a>
+		</div>
+		 <div class="workBox">
+          
+		 		<a href="" target="_blank">
+				<img src=Admin_dash.png alt="">
+				<p>Admin Dashboard After Login</p>
+			</a>
+		
+		</div>
+		 <div class="workBox">
+          
+		 			<a href="" target="_blank">
+				<img src=user_dash.png alt="">
+				<p>User Dashboard After Login</p>
+		</a>
+		
+		</div>
+				<div class="workBox">
+			<a href="" target="_blank">
+				<img src=aboutus.png alt="">
+				<p>About Us Page</p>
+		</a>
+			</div>
+		
+            <div class="heading">
+                <a href="https://github.com/PriyankaViltoria/Annapurna" target="_blank" class="btn" style="color: #fff;">View OverAll My Project</a>
+            </div>
+            	<div class="workBox">
+			<a href="" target="_blank">
+				<img src=I.jpeg alt="">
+				<p>CLOUD X LAB Certification of Scala Project - Churn Email Inbox with Scala</p>
+			</a>
+			</div>
+	
+		
+			<div class="workBox">
+			<a href="" target="_blank">
+				<img src=Udemy_MySQL.jpg alt="">
+				<p>Udemy Certification of MySQL-For Beginners</p>
+			</a>
+			</div>
+		
+		
+		<div class="workBox">
+			<a href="" target="_blank">
+				<img src=F.jpg alt="">
+				<p>Certification of Microsoft AI Classroom Series</p>
+			</a>
+			</div>
+		
+			<div class="workBox">
+			<a href=" " target="_blank">
+				<img src=A.jpg alt="">
+				<p>LinkedIn Learning Certification of Programming Foundations: Databases</p>
+			</a>
+			</div>
+		
+		<div class="workBox">
+			<a href="" target="_blank">
+				<img src=sololearn_java.jpg alt="">
+				<p>Sololearn Certification of Java Course</p>
+			</a>
+			</div>
+		
+			<div class="heading">
+			<a href="Certificates.html" target="_blank" class="btn" style="color: #fff";>View All My Certificates</a>
+				</div>
+</div> 
+    </section>
+       <!-- Creating Contact Layout in HTML -->
+		<section class="contact" id="contact">
+			<div class="heading white">
+				<p>Feel free to contact me anytime</p>
+				<h2>Get in Touch</h2>
+			</div>
+			
+			<div class="content">
+				<div class="contactInfo">
+					<h3>Contact Info</h3>
+						<p>Thanks for visiting my online Portfolio.</p>	
+
+					<div class="contactInfoBx">
+						<div class="box">
+							<div class="icon">
+									<i class="fa fa-map-marker"></i>
+							</div>
+							<div class="text">
+							<h3>Address</h3>
+							<address>Meerut,  India</address>
+							
+						</div>	
+					</div>
+					<div class="box">
+							<div class="icon">
+							
+					<!-- 
+							<i class="fa fa-phone"></i>
+							</div>
+							<div class="text">
+							<h3>Phone no:</h3>
+							<p>9045062130</p>
+							-->
+						</div>	
+					</div>
+					
+					<div class="box">
+							<div class="icon">
+									<i class="fa fa-envelope-o"></i>
+							</div>
+							<div class="text">
+							<h3>Email Address</h3>
+							<p>priyankaviltoria@gmail.com</p>							
+						</div>	
+					</div>
+					<br>
+					
+					<h3>Social Connect</h3>
+					<div class="boxSocial">
+						<div class="icon">
+							<a href=" https://www.linkedin.com/in/priyanka-viltoria-165b791a3" target="_blank">
+								<i class="fa fa-linkedin"></i>
+							</a>
+			</div>
+			<div class="boxSocial">
+						<div class="icon">
+							<a href="https://github.com/PriyankaViltoria " target="_blank">
+								<i class="fa fa-github"></i>
+							</a>
+		</div>
+		
+	</div>
+			</div>
+			</div>
+				</div>
+			<div class="formBx">
+		<form method="post" autocomplete="off" name="google-sheet">
+				<h3>Message Me</h3>
+					<input type="text" placeholder="Full Name" required=""/>
+					<input type="email" placeholder="Email" required=""/>
+					<textarea name=" " id=" " rows="6" placeholder="Your Message" required=""></textarea>
+					<input type="submit" value="Send Message" name=" " required=""/>
+		</form>
+		</div>
+		<script>
+            const scriptURL = 'https://script.google.com/macros/s/AKfycbwhIUyP3Ajs5R8i6E0JoSgZXpuNRsz1yUTI6XtYc8v51_T34aRq-xt5EcgtyoMlHQy8/exec'
+            const form = document.forms['google-sheet']
+          
+            form.addEventListener('submit', e => {
+              e.preventDefault()
+              fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+                .then(response => alert("Thanks for Contacting me..! I Will Contact You Soon..."))
+                .catch(error => console.error('Error!', error.message))
+            })
+          </script>
+			  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+		</section>
+    
+   <!-- Creating Footer Layout in HTML -->
+    <footer class="copyright">
+       	<p>Created By Priyanka Viltoria | &copy; 2020, All Rights Reserved. </p>
+    </footer>
+    <script src="https://unpkg.com/boxicons@latest/dist/boxicons.js"></script>
+	<script src="ext.js" language="javascript"></script>
+</body>
+</html>
